@@ -1,24 +1,11 @@
 //Business Logic
+var sorry = "I'm sorry, Dave. I'm afraid I can't do that";
+function halize(userNum) {
 
-// function halize(userNum) {
-//   var numArray = [];
-//   for (var i = 0; i <= userNum; i++) {
-//     numArray.push(i)
-//     var newString = numArray.toString()
-//     var newString = newString.split("");
-//     console.log(newString);
-//     if (newString.includes("1")) {
-//       var outputStr = newString.replace("1", "Beep!");
-//       console.log(outputStr);
-//     } else {
-//
-//     }
-//   }
-// }
+// function that replaces a single number w/ 'Beep!', 'Boop!' & sorry
+// returns the replaced value
 
-var sorry = "I'm sorry, Dave. I'm afraid I can't do that.";
-
-var halize = num => {
+var numTransform = num => {
   num = num.toString();
   if (num.includes('1')) {
     if (num.length > 1) {
@@ -39,7 +26,18 @@ var halize = num => {
   }
 };
 
-//UI
+numbers = []
+// Load the `numbers` array with all numbers up to userNum
+for (var i = 0; i <= userNum; i++){
+    numbers.push(i)
+}
+
+// For each number/element in the array, pass it into the `numTransform` function
+// `map()` returns new array post `numTransform` function
+return numbers.map(i => numTransform(i)).toString()
+}
+
+//User Interface
 $(document).ready(function() {
   $("form#beepboop").submit(function(event) {
     event.preventDefault();

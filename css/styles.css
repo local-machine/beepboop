@@ -1,0 +1,21 @@
+h1 {
+  font-family: 'Major Mono Display', monospace;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Major Mono Display', monospace;
+  text-align: center;
+}
+
+body {
+  font-family: 'Share Tech Mono', monospace;
+  background-color: #ea9367;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: auto;
+}

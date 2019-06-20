@@ -3,6 +3,7 @@
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Share+Tech+Mono&display=swap" rel="stylesheet">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
     <title>Beep! Boop!</title>
@@ -11,16 +12,19 @@
     <div class="container">
       <div class="jumbotron">
         <h1>Beep! Boop!</h1>
-        <h3>Hal 9000 is a sentient computer that controls the Discovery One spaceship. Hal enjoys having the crew pick a number for him to process and return.</h3>
+        <h2>Speak to a Robot</h2>
+        <h5>Hal 9000 is a sentient computer that controls the Discovery One spaceship. You must ask Hal to open the spaceship's pod bay doors when needed. The spaceship has many pod bay doors, enter a number and Hal will respond with the same number if he can open the door or say sorry if he can not. From time to time Hal has a malfunction and replies with a "Boop!" or "Beep!". Due to system requirements, Hal will attempt to open every pod bay door up to the number you provide.</h5>
       </div>
+      <img src="img/hall.jpg" alt="A photo of Dave in hall of Discovery One spaceship">
+      <hr>
       <form id="beepboop">
         <div class="form-group">
-          <label>Enter a number you'd like Hal 9000 to process: </label>
+          <label>Pod Bay door you would like Hal to open: </label>
           <input id="userString" type="text">
         </div>
         <button type="submit" class="btn-default">Enter</button>
       </form>
-
+      <hr>
       <div id="output">
         <p>Hal's reply: <span class ="result"></span> </p>
       </div>
